@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactNative from 'react-native'
+import ReactNative, { ViewPropTypes } from 'react-native'
 import PropTypes from 'prop-types'
 
 const {
@@ -101,7 +101,7 @@ export default class SGPlayer extends Component {
 
     return (
       <RCTSGPlayer ref={this._assignRoot} {...nativeProps} />
-    )
+  )
   }
 }
 
@@ -131,7 +131,7 @@ SGPlayer.propTypes = {
   translateX: PropTypes.number,
   translateY: PropTypes.number,
   rotation: PropTypes.number,
-  ...View.propTypes
+  ...ViewPropTypes
 }
 
 const styles = StyleSheet.create({
