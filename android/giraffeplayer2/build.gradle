@@ -24,7 +24,13 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.github.tcking:viewquery:1.6'
-
-    compile 'com.github.tcking:giraffeplayer2:0.1.25'
+    
+    compile 'com.github.tcking:giraffeplayer2:0.1.25-full'
+    compile 'com.github.tcking:ijkplayer-java:0.8.4-full'
+    compile 'com.github.tcking:ijkplayer-armv7a:0.8.4-full'
+    compile 'com.github.tcking:ijkplayer-arm64:0.8.8-full' //support arm64
+    compile 'com.github.tcking:ijkplayer-armv5:0.8.8-full' //support armv5
+    compile 'com.github.tcking:ijkplayer-x86:0.8.8-full' //support x86
+    compile 'com.github.tcking:ijkplayer-x86_64:0.8.8-full' //support x86_64
 }
 apply from: new File(projectDir, "gradle-on-demand.gradle")
