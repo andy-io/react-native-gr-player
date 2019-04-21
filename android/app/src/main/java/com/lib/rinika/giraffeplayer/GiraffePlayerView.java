@@ -32,7 +32,7 @@ public class GiraffePlayerView extends FrameLayout implements LifecycleEventList
     protected AudioManager audioManager;
     private Handler mProgressUpdateHandler = new Handler();
 
-    private boolean mPaused = true;
+    private boolean mPaused = false;
     private boolean mCompleted = false;
     private String mSrcString;
     protected int maxVolume;
