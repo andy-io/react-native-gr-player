@@ -153,6 +153,7 @@ public class GiraffePlayerView extends FrameLayout implements LifecycleEventList
 
     private void setMedia(String filePath) {
         videoView.setVideoPath(filePath);
+        videoView.getPlayer().initialize();
         videoView.getPlayer().start();
         videoView.getPlayer().setDisplayModel(GiraffePlayer.DISPLAY_NORMAL);
         checkProgress();
